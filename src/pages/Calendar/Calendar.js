@@ -24,7 +24,7 @@ const Calendar = () => {
   const fetchEventsFromDatabase = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend.onrender.com/api/v1/calendar/all"
+        "https://gcecbackend-rk4j.onrender.com/api/v1/calendar/all"
       );
       setEvents(data);
     } catch (error) {
@@ -53,7 +53,7 @@ const Calendar = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://gcecbackend.onrender.com/api/v1/calendar/create",
+        "https://gcecbackend-rk4j.onrender.com/api/v1/calendar/create",
         {
           method: "POST",
           headers: {
@@ -81,7 +81,7 @@ const Calendar = () => {
   const handleEventDelete = async () => {
     try {
       const response = await fetch(
-        `https://gcecbackend.onrender.com/api/v1/calendar/delete/${selectedEventId}`, // Assuming you have selectedEventId state to store the id of the selected event
+        `https://gcecbackend-rk4j.onrender.com/api/v1/calendar/delete/${selectedEventId}`, // Assuming you have selectedEventId state to store the id of the selected event
         {
           method: "DELETE",
         }
@@ -102,7 +102,7 @@ const Calendar = () => {
   const handleEventUpdate = async () => {
     try {
       const response = await fetch(
-        `https://gcecbackend.onrender.com/api/v1/calendar/update/${selectedEventId}`,
+        `https://gcecbackend-rk4j.onrender.com/api/v1/calendar/update/${selectedEventId}`,
         {
           method: "PUT", // Assuming you're using PUT method for updating events
           headers: {
