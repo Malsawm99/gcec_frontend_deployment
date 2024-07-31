@@ -25,7 +25,7 @@ const TeacherStudentData = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/teacher/singlePopulateData/${params.slug}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/teacher/singlePopulateData/${params.slug}`
       );
       setTeacher(data.teacher);
       setLoading(false);
