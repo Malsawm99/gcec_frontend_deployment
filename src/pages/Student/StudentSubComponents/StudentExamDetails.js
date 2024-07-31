@@ -26,7 +26,7 @@ const StudentExamDetails = () => {
   const getSingleStudent = async () => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/student/single/${params.slug}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/student/single/${params.slug}`
       );
       setStudent(data.student);
 
