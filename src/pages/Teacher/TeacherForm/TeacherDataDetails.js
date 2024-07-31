@@ -22,7 +22,7 @@ const TeacherDataDetails = () => {
   const getSingleTeacher = async () => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/teacher/single/${params.slug}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/teacher/single/${params.slug}`
       );
       setTeacher(data.teacher);
       console.log("My Single teacher", data.teacher);
