@@ -44,7 +44,7 @@ const PostForm = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        "https://gcecbackend.onrender.com/api/v1/userPost/create",
+        "https://gcecbackend-rk4j.onrender.com/api/v1/userPost/create",
         formData,
         {
           headers: {
