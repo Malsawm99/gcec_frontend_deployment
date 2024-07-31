@@ -25,7 +25,7 @@ const TeacherData = () => {
     try {
       setLoading(true);
       const res = await fetch(
-        `https://gcecbackend.onrender.com/api/v1/teacher/all?page=${page}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/teacher/all?page=${page}`
       );
       const { data, pages: totalPages } = await res.json();
 
