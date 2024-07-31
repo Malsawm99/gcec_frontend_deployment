@@ -27,7 +27,7 @@ const Post = () => {
     try {
       setLoading(true);
       const res = await fetch(
-        `https://gcecbackend.onrender.com/api/v1/userPost/all?page=${page}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/userPost/all?page=${page}`
       );
       const { data, pages: totalPages } = await res.json();
 
@@ -46,7 +46,7 @@ const Post = () => {
   const handleView = async (postId) => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/userPost/single/${postId}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/userPost/single/${postId}`
       );
       setCurrentPost(data);
       setIsModalOpen(true); // Open the modal
@@ -69,7 +69,7 @@ const Post = () => {
     if (result.isConfirmed) {
       try {
         await axios.delete(
-          `https://gcecbackend.onrender.com/api/v1/userPost/delete/${postId}`
+          `https://gcecbackend-rk4j.onrender.com/api/v1/userPost/delete/${postId}`
         );
         getAllPosts();
         console.log("Post deleted successfully!");
