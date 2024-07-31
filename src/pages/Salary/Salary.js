@@ -47,7 +47,7 @@ const Salary = () => {
 
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
       );
       setAcademic(data.academic);
     } catch (error) {
@@ -91,7 +91,7 @@ const Salary = () => {
 
     try {
       const response = await axios.put(
-        `https://gcecbackend.onrender.com/api/v1/teacher/update-finance/${selectedTeacher.slug}`,
+        `https://gcecbackend-rk4j.onrender.com/api/v1/teacher/update-finance/${selectedTeacher.slug}`,
         {
           financeProperties: [
             {
