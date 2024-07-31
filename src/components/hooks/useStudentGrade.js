@@ -8,7 +8,7 @@ export default function useStudentGrade() {
   const getCategories = async () => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/grade/all`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/grade/all`
       );
       setCategories(data.grades);
     } catch (error) {
