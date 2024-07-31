@@ -12,7 +12,7 @@ const StudentSearchInput = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/student/search/${values.keyword}`
+        `https://gcecbackend-rk4j.onrender.com/api/v1/student/search/${values.keyword}`
       );
       setValues({ ...values, results: data });
       navigate("/stud-search-dash");
