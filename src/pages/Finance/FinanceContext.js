@@ -17,7 +17,7 @@ export const AcademicProvider = ({ children }) => {
   const getAllAcademics = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-0k38.onrender.com/api/v1/academic/all"
+        "https://gcecserver-co7w.onrender.com/api/v1/academic/all"
       );
       setAcademics(data.academics);
     } catch (error) {
@@ -28,7 +28,7 @@ export const AcademicProvider = ({ children }) => {
   const getSingleAcademic = async (slug) => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-0k38.onrender.com/api/v1/academic/singleRemove/${slug}`
+        `https://gcecserver-co7w.onrender.com/api/v1/academic/singleRemove/${slug}`
       );
       setAcademic(data.academic);
     } catch (error) {
