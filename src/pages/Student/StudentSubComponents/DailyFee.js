@@ -38,7 +38,7 @@ const DailyFee = () => {
     try {
       setLoading(true);
       const { data } = await axios.get(
-        "https://gcecbackend-rk4j.onrender.com/api/v1/student/allData"
+        "https://gcecbackend-0k38.onrender.com/api/v1/student/allData"
       );
       setStudents(data.students);
       console.log("All Students", data.students);
