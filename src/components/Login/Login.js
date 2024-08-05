@@ -19,7 +19,7 @@ const Login = () => {
       }
       setLoading(true); // Start loading
       const response = await axios.post(
-        "https://gcecbackend-rk4j.onrender.com/api/v1/user/login",
+        "https://gcecserver-co7w.onrender.com/users/api/v1/user/login",
         {
           userId,
           password,
