@@ -72,7 +72,7 @@ const Finance = () => {
   const getAllGrades = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-0k38.onrender.com/api/v1/grade/all"
+        "https://gcecserver-co7w.onrender.com/api/v1/grade/all"
       );
       // Sort grades using custom sorting function
       const sortedGrades = sortGrades(data.grades);
@@ -89,7 +89,7 @@ const Finance = () => {
   const getAllFeeAmountData = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-0k38.onrender.com/api/v1/fee/all"
+        "https://gcecserver-co7w.onrender.com/api/v1/fee/all"
       );
       setFeeData(data);
     } catch (error) {
@@ -128,7 +128,7 @@ const Finance = () => {
 
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-0k38.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
+        `https://gcecserver-co7w.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
       );
       setAcademic(data.academic);
     } catch (error) {
@@ -194,7 +194,7 @@ const Finance = () => {
 
     try {
       const response = await axios.put(
-        `https://gcecbackend-0k38.onrender.com/api/v1/student/updateFinance/${selectedStudent.slug}`,
+        `https://gcecserver-co7w.onrender.com/api/v1/student/updateFinance/${selectedStudent.slug}`,
         {
           financeProperties: [
             {
@@ -244,7 +244,7 @@ const Finance = () => {
 
     try {
       const response = await axios.put(
-        `https://gcecbackend-0k38.onrender.com/api/v1/student/updateFinance/${selectedStudent.slug}`,
+        `https://gcecserver-co7w.onrender.com/api/v1/student/updateFinance/${selectedStudent.slug}`,
         {
           financeProperties: [
             {
@@ -312,7 +312,7 @@ const Finance = () => {
   const handleDeleteData = async () => {
     try {
       await axios.delete(
-        `https://gcecbackend-0k38.onrender.com/api/v1/student/deleteFinance/${selectedStudent.slug}`,
+        `https://gcecserver-co7w.onrender.com/api/v1/student/deleteFinance/${selectedStudent.slug}`,
         {
           data: {
             year: selectedAcademics,
