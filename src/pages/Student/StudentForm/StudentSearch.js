@@ -11,7 +11,7 @@ const StudentSearch = () => {
     e.preventDefault();
     try {
       const { data } = await axios.get(
-        `https://gcecbackend.onrender.com/api/v1/student/search/${values.keyword}`
+        `https://gcecbackend-195.onrender.com/api/v1/student/search/${values.keyword}`
       );
       setValues({ ...values, results: data });
       navigate("/student-search-list");
