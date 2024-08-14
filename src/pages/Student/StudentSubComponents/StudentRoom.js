@@ -44,7 +44,7 @@ const StudentRoom = () => {
     setCategoryEnabled(true);
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/grade/singleSlug/${selectedGradeSlug}`
+        `https://gcecbackend-195.onrender.com/api/v1/grade/singleSlug/${selectedGradeSlug}`
       );
       setGrade(data.grade.classStudentProperties);
     } catch (error) {
