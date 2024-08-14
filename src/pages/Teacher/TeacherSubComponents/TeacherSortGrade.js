@@ -32,7 +32,7 @@ const TeacherSortGrade = () => {
   const getAllAcademics = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-rk4j.onrender.com/api/v1/academic/all"
+        "https://gcecbackend-195.onrender.com/api/v1/academic/all"
       );
       setAcademics(data.academics);
     } catch (error) {
@@ -47,7 +47,7 @@ const TeacherSortGrade = () => {
 
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
+        `https://gcecbackend-195.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
       );
       setAcademic(data.academic);
       console.log("My Grade", data.academic);
