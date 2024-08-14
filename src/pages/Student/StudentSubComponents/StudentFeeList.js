@@ -35,7 +35,7 @@ const StudentFeeList = () => {
 
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
+        `https://gcecbackend-195.onrender.com/api/v1/academic/singleRemove/${selectedAcademicSlug}`
       );
       setAcademic(data.academic);
       console.log("My Student Fee", data.academic);
