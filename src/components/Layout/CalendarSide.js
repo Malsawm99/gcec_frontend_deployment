@@ -20,7 +20,7 @@ const CalendarSide = () => {
   const fetchEventsFromDatabase = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecserver-co7w.onrender.com/api/v1/calendar/all"
+        "https://gcecbackend-195.onrender.com/api/v1/calendar/all"
       );
       setEvents(data);
     } catch (error) {
