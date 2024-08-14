@@ -37,7 +37,7 @@ const TeacherDashDetails = () => {
   const getAllGrades = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-rk4j.onrender.com/api/v1/grade/all"
+        "https://gcecbackend-195.onrender.com/api/v1/grade/all"
       );
       setGrades(data.grades);
     } catch (error) {
@@ -48,7 +48,7 @@ const TeacherDashDetails = () => {
   const getSingleTeacher = async () => {
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/teacher/single/${params.slug}`
+        `https://gcecbackend-195.onrender.com/api/v1/teacher/single/${params.slug}`
       );
       setTeacher(data.teacher);
       setMyId(data.teacher._id);
