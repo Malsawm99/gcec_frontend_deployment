@@ -35,7 +35,7 @@ const StudentTimeList = () => {
   const getAllGrades = async () => {
     try {
       const { data } = await axios.get(
-        "https://gcecbackend-rk4j.onrender.com/api/v1/grade/all"
+        "https://gcecbackend-195.onrender.com/api/v1/grade/all"
       );
       setGrades(data.grades);
       console.log(data);
@@ -67,7 +67,7 @@ const StudentTimeList = () => {
     setCategoryEnabled(true);
     try {
       const { data } = await axios.get(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/grade/single/${selectedGradeId}`
+        `https://gcecbackend-195.onrender.com/api/v1/grade/single/${selectedGradeId}`
       );
       setMyId(data.grade._id);
       setGradeName(data.grade.name);
@@ -130,7 +130,7 @@ const StudentTimeList = () => {
       }));
 
       await axios.put(
-        `https://gcecbackend-rk4j.onrender.com/api/v1/grade/update/${myId}`,
+        `https://gcecbackend-195.onrender.com/api/v1/grade/update/${myId}`,
         {
           timeSubjectProperties: {
             grade: gradeName,
